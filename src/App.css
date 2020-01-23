@@ -25,3 +25,26 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+
+
+.loader-div{
+  margin: 0 auto;
+  height: 130px;
+  width:130px;
+  border-radius: 50%;
+  border-top: 3px solid #F08080;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
